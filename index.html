@@ -3,19 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
   </head>
   <body>
-    You are thirteen years old. Your first trip to the consultant!
-    <div id="first trip">
+    <div class="firstTrip">
+      You are thirteen years old. Your first trip to the consultant!
+      <br/>
       You are a junior in high school. You have to study but your friends want to play games all day. What do you do?
       <br/>
-      <input type="radio" id="r1" name="first" value="Option 1"> Tell your friends you don't have time, you have to study.
+      <input type="radio" id="a1" name="first" value="Option A1"> Tell your friends you don't have time, you have to study.
       <br/>
-      <input type="radio" id="r2" name="first" value="Option 2"> Forgo studying, you can always cram in between classes. Hanging out with friends is more fun and important.
+      <input type="radio" id="a2" name="first" value="Option A2"> Forgo studying, you can always cram in between classes. Hanging out with friends is more fun and important.
       <br/>
       <button id="submit1">submit</button>
+    </div>
+    <div class="secondTrip hidden">
+      <span class="message"></span><br/>
+      The consultant says, "You notice the new girl in your history class sitting next to you furiously scribbling on paper, but find that her only pen has run out of ink. What do you do?"
+      <br/>
+      <input type="radio" id="b1" name="second" value="Option B1"> Gesture to her and give her a writing utensil, a black-inked pen. However, you now are stuck with using your only remaining writing utensil, a faulty pen that is almost out of ink. It's a pain to use, but it can last until the end of class.
+      <br/>
+      <input type="radio" id="b2" name="second" value="Option B2"> I only have one working good pen. Someone else will lend her one, or she can ask the teacher.
+      <br/>
+      <button id="submit2">submit</button>
+    </div>
+    <div class="thirdTrip hidden">
+      <span class="message"></span><br/>
+      <span class="consultant"></span>
+      <br/>
+      <input type="radio" id="c1" name="third" value="Option C1"><label class="c1"></label>
+      <br/>
+      <input type="radio" id="c2" name="third" value="Option C2"><label class="c2"></label>
+      <br/>
+      <button id="submit3">submit</button>
     </div>
     <script src="app.js"></script>
   </body>
